@@ -126,4 +126,6 @@ final_df = pd.DataFrame.from_dict(final_dict, orient='index')
 final_df = final_df.rename(columns={0: 'Word Probability Score'})
 
 
-st.write(final_df.sort_values(by=['Word Probability Score'], ascending=False))
+end_df = final_df.sort_values(by=['Word Probability Score'], ascending=False)
+
+st.table(end_df)
