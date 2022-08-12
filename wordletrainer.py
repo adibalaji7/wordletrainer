@@ -54,15 +54,15 @@ st.markdown("### Green Letters")
 # get user input currently doesnt handle number of characters
 
 with a:
-    fig = st.text_input(label="1st")
+    fig = st.text_input(label="1st").lower()
 with b:
-    sg = st.text_input(label="2nd")
+    sg = st.text_input(label="2nd").lower()
 with c:
-    tg = st.text_input(label="3rd")
+    tg = st.text_input(label="3rd").lower()
 with d:
-    fg = st.text_input(label="4th")
+    fg = st.text_input(label="4th").lower()
 with e:
-    ffg = st.text_input(label="5th")
+    ffg = st.text_input(label="5th").lower()
 
 st.markdown("### Yellow Letters")
 
@@ -70,15 +70,15 @@ st.markdown("### Yellow Letters")
 
 
 with u:
-    fiy = st.text_input(label="1st (can be multiple, no commas)")
+    fiy = st.text_input(label="1st (can be multiple, no commas)").lower()
 with v:
-    sy = st.text_input(label="2nd (can be multiple, no commas)")
+    sy = st.text_input(label="2nd (can be multiple, no commas)").lower()
 with w:
-    ty = st.text_input(label="3rd (can be multiple, no commas)")
+    ty = st.text_input(label="3rd (can be multiple, no commas)").lower()
 with x:
-    fy = st.text_input(label="4th (can be multiple, no commas)")
+    fy = st.text_input(label="4th (can be multiple, no commas)").lower()
 with y:
-    ffy = st.text_input(label="5th (can be multiple, no commas)")
+    ffy = st.text_input(label="5th (can be multiple, no commas)").lower()
 
 yellow = fiy + sy + ty + fy + ffy
 
@@ -86,7 +86,7 @@ st.markdown("### Eliminated Letters")
 
 # exclusion letters where the grey grids are
 
-exclusions = st.text_input(label="Input all letters (no commas) that are eliminated")
+exclusions = st.text_input(label="Input all letters (no commas) that are eliminated").lower()
 
 st.markdown("# What to Guess")
 
